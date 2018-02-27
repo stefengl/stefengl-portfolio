@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import './reset.css';
+
+:root {
+  --main-bg-color: #efefef;
+  --main-text-color: rgba(0, 0, 0, 0.83);
+  --second-text-color: rgba(0, 0, 0, 0.58);
+  --third-text-color: rgba(0, 0, 0, 0.3);
+  --anchor-color: #e91e63;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Roboto";
+}
+

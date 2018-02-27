@@ -1,0 +1,5 @@
+<section class="socials-wrapper">
+  <span *ngFor="let d of data" class="socials-icon-wrapper">
+    <i [class]="d.icon + ' social-icon'" (click)="onIconClick($event, d.url)"></i>
+  </span>
+</section>

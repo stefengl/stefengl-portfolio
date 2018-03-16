@@ -1,4 +1,4 @@
 export enum FirebaseReference {
-    PersonalImages = "portfolio/personal/images",
-    PersonalParallaxImage = "portfolio/personal/parallax"
+    PersonalImages = 'portfolio/personal/images/',
+    PersonalParallaxImage = 'portfolio/personal/parallax/'
 }

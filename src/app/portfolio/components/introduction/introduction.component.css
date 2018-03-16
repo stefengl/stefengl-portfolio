@@ -1,7 +1,7 @@
 .introduction-wrapper{
     width:100vw;
     box-sizing: border-box;
-    padding: 5rem 12.5vw;
+    padding: 15% 12.5%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -19,4 +19,16 @@
     font-size: 1rem;
     color: var(--second-text-color);
     line-height: 1.5;
+}
+
+@media screen and (min-width:1024px){
+    .introduction-wrapper{
+        padding: 15% 20%;
+    }
+}
+
+@media screen and (min-width:1440px){
+    .introduction-wrapper{
+        padding: 15% 25%;
+    }
 }

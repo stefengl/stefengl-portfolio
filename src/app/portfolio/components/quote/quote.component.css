@@ -1,24 +1,41 @@
 .quote-wrapper {
-    width: 100vw;
-    box-sizing: border-box;
-    padding: 7.5rem 10vw;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid #efefef;
-    border-bottom: 1px solid #efefef
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 7.5% 10%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef
 }
 
-.quote-title  {
-    font-family: "Bad Script";
-    font-size: 1.4rem;
-    font-weight: 100;
-    margin: .75rem
+.quote-title {
+  font-family: "Bad Script";
+  font-size: 1.4rem;
+  font-weight: 100;
+  margin: .75rem
 }
 
-.quote-source  {
-    align-self: flex-end;
-    color: var(--second-text-color)
+.quote-source {
+  align-self: flex-end;
+  color: var(--second-text-color)
+}
 
+@media screen and (min-width: 768px) {
+  .quote-wrapper {
+    padding: 7.5% 15%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .quote-wrapper {
+    padding: 7.5% 25%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .quote-wrapper {
+    padding: 7.5% 35%;
+  }
 }

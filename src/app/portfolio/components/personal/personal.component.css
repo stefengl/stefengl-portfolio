@@ -1,22 +1,99 @@
-.personal-wrapper{
-    border-top: 1px solid #efefef;
-    border-bottom: 1px solid #efefef;
+.personal-wrapper {
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 10%;
+}
+
+.personal-figure {
+  width: 100vw;
+  box-sizing: border-box;
+  height: 65vh;
+  margin: 0;
+  background: url(https://firebasestorage.googleapis.com/v0/b/onlineportfolio-d955f.appspot.com/o/portfolio%2Fpersonal%2Fparallax%2FDSCF1222.JPG?alt=media&token=6eed52f9-917c-42f5-a357-fbb938a0a4f4) 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  background-position-x: 87%;
+  filter: grayscale(100%);
+}
+
+.personal-figcaption {
+  font-size: 2rem;
+  color: #fff;
+  font-family: Poiret One, sans-serif;
+  position: relative;
+  top: 45%;
+  font-weight: 700;
+  text-align: center;
 }
 
 .personal-header {
-    box-sizing: border-box;
-    padding: 20% 7.5%
+  box-sizing: border-box;
+  padding: 10% 7.5%;
 }
 
 .personal-title {
-    padding: 5% 0;
-    font-family: Poiret One;
-    background: -webkit-gradient(linear,left top, right top,from(#e1bee7),to(#ff6f00));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  padding: 5% 0;
+  font-family: Poiret One;
+  background: -webkit-gradient(linear, left top, right top, from(#e1bee7), to(#ff6f00));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .personal-subtitle {
-    font-family: Indie Flower;
-    opacity: 0.4;
+  font-family: Indie Flower;
+  opacity: 0.4;
+}
+
+.personal-images-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.personal-images {
+  margin: .1% .1%;
+}
+
+.personal-images-loading-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.personal-loading-icon {
+  color: var(--anchor-color);
+  animation: pulse 1.5s ease-in infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .personal-images {
+    width: 49%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .personal-images {
+    width: 32%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .personal-images {
+    width: 24%;
+  }
 }

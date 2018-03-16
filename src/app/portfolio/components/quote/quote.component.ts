@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-quote',
+  selector: 'portfolio-quote',
   templateUrl: './quote.component.html',
   styleUrls: ['./quote.component.css']
 })

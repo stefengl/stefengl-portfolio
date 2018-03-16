@@ -1,3 +1,17 @@
-<p>
-  card works!
-</p>
+<section class="card-wrapper">
+  <h1 class="card-header">{{this.cardTitle}}</h1>
+
+  <article *ngFor="let item of cardContent" class="card-content">
+    <h2 class="card-content-title">{{item.title}}</h2>
+    <h5 class="card-content-info">
+      <i class="card-content-info-icon ion-ios-calendar-outline"></i>
+      {{item.date}}
+    </h5>
+    <h5 class="card-content-info">
+      <i class="card-content-info-icon ion-ios-location-outline"></i>
+      {{item.location}}
+    </h5>
+    <p class="card-content-text" [innerHtml]="item.text"></p>
+  </article>
+
+</section>

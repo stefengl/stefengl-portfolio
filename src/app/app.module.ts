@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Route } from '@angular/router';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { PortfolioModule } from './portfolio/portfolio.module';
-import { AuthenticationModule } from './authentication/authentication.module';
 import { FirebaseModule } from './firebase/firebase.module';
 
 // Components
@@ -22,10 +21,9 @@ import { appRoutes } from './app.routes';
   imports: [
     BrowserModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
-    RouterModule.forRoot(appRoutes),
     FirebaseModule,
     PortfolioModule,
-    AuthenticationModule
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,9 +1,23 @@
 <section class="personal-wrapper">
+  <figure class="personal-figure">
+    <figcaption class="personal-figcaption">
+      "The time you enjoy wasting is not wasted time."
+    </figcaption>
+  </figure>
+
   <header class="personal-header">
     <h1 class="personal-title">My life in colours</h1>
-    <h4 class="personal-subtitle">Developers are humans too</h4>
+    <h3 class="personal-subtitle">Developers are humans too</h3>
   </header>
-  <div>
-    <img *ngFor="let i of images" style="width:100%" [src]="i" alt="i">
+
+  <div *ngIf="images" class="personal-images-wrapper">
+    <img class="personal-images" *ngFor="let i of images" [src]="i" alt="i">
   </div>
+
+  <div *ngIf="!images" class="personal-images-loading-wrapper">
+    <h1>
+      <i class="personal-loading-icon ion-ios-heart-outline"></i>
+    </h1>
+  </div>
+
 </section>

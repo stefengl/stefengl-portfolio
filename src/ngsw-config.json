@@ -23,5 +23,15 @@
         "/assets/**"
       ]
     }
+  },{
+    "name": "icons",
+    "installMode": "prefetch",
+    "updateMode": "prefetch",
+    "resources": {
+      "files": [
+        "https://fonts.googleapis.com/**",
+        "https://code.ionicframework.com/**"
+      ]
+    }
   }]
 }
